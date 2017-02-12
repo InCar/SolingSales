@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="suggest">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>欢迎进入英卡科技</title>
+    <link href="../css/Untitled-1.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../css/layout.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.validate.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/fun_js/suggestCtrl.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <!--header-->
+    <div id="header">
+        <div class="logobox float_l"></div>
+        <div class="navbox float_l">
+            <!--nav-->
+            <ul>
+                <li><a href="/wsite/index/index.html" style="color:#85bb43; background-color:#FFF">关于</a></li>
+                <li><a href="/wsite/index/product.html">产品</a></li>
+                <li><a href="/wsite/index/discover.html">发现</a></li>
+                <li><a href="http://service.incardata.com.cn/" target="_blank">登录</a></li>
+            </ul>
+            <!--nav end-->
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--header end-->
+    <!--banner-->
+    <!--<div class="banner" id="banner-index"><img src="../images/bannerimg1.png" width="1000" height="353" /></div>centreshow-service-bg-->
+    <!--banner end-->
+    <!--轮播start-->
+    <div id="myCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="../images/banner-p1.png" >
+            </div>
+            <div class="item">
+                <img src="../images/banner-p2.png" >
+            </div>
+            <div class="item">
+                <img src="../images/banner-p3.png" >
+            </div>
+        </div>
+    </div>
+    <!--轮播end-->
+    <!--centreshow-use-->
+    <div class="centreshow" id="centreshow-use">
+        <div class="title"><h1>我们的价值</h1>
+            <h1>Our Core Value</h1>
+        </div>
+        <div class="contentbox" >
+            <ul class="float_l" >
+                <li><img src="../images/img-01.png" width="178" height="178" /></li>
+                <li><h3>5分钟<br />配置完成车联网应用</h3></li>
+            </ul>
+            <ul class="float_l">
+                <li><img src="../images/img-02.png" width="178" height="178" /></li>
+                <li><h3>1-3个月<br />构建专有车联网平台</h3></li>
+            </ul>
+            <ul class="float_l">
+                <li><img src="../images/img-03.png" width="178" height="178" /></li>
+                <li><h3>聚焦业务，<br />脱离车联网IT基础设施</h3></li>
+            </ul>
+            <ul class="float_l">
+                <li><img src="../images/img-04.png" width="178" height="178" /></li>
+                <li><h3>拥有持续改进、<br />演化的车联网平台</h3></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--centreshow-use end-->
+    <!--centreshow-service-->
+    <div class="centreshow" id="centreshow-service">
+        <div class="title"><h1>我们的特点</h1>
+            <h1>Our Features</h1>
+        </div>
+        <div class="contentbox">
+            <ul class="float_l">
+                <li><img src="../images/img-05.png" width="178" height="178" /></li>
+                <li><h3>传统车辆服务、<br />数据服务与移动互联整合</h3></li>
+            </ul>
+            <ul class="float_l">
+                <li><img src="../images/img-06.png" width="178" height="178" /></li>
+                <li><h3>端到云的SAAS服务</h3></li>
+            </ul>
+            <ul class="float_l">
+                <li><img src="../images/img-07.png" width="178" height="178" /></li>
+                <li><h3>线上线下资源整合</h3></li>
+            </ul>
+            <ul class="float_l">
+                <li><img src="../images/img-08.png" width="178" height="178" /></li>
+                <li><h3>百万级车辆容纳系统</h3></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--centreshow-service end-->
+    <!--centreshow-User-->
+    <div class="centreshow" id="centreshow-use">
+        <div class="title"><h1>谁可以用</h1>
+            <h1>Who Can Use</h1>
+        </div>
+        <div class="contentbox" >
+            <div class="mainbox float_l">
+                <div class="main">
+                    <div class="float_l"><img src="../images/img-09.png" width="146" height="99" /></div>
+                    <div class="float_l text">4S店</div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--mainbox end-->
+            <div class="mainbox float_l">
+                <div class="main">
+                    <div class="float_l"><img src="../images/img-10.png" width="146" height="99" /></div>
+                    <div class="float_l text">企业车队</div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--mainbox end-->
+            <div class="mainbox float_l">
+                <div class="main">
+                    <div class="float_l"><img src="../images/img-11.png" width="146" height="99" /></div>
+                    <div class="float_l text">专车</div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--mainbox end-->
+            <div class="mainbox float_l">
+                <div class="main">
+                    <div class="float_l"><img src="../images/img-12.png" width="146" height="99" /></div>
+                    <div class="float_l text">汽车平台商</div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--mainbox end-->
+            <div class="mainbox float_l">
+                <div class="main">
+                    <div class="float_l"><img src="../images/img-13.png" width="146" height="99" /></div>
+                    <div class="float_l text">车主</div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--mainbox end-->
+            <div class="mainbox float_l">
+                <div class="main">
+                    <div class="float_l"><img src="../images/img-14.png" width="146" height="99" /></div>
+                    <div class="float_l text">IT提供商</div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--mainbox end-->
+            <div class="mainbox float_l">
+                <div class="main">
+                    <div class="float_l"><img src="../images/img-15.png" width="146" height="99" /></div>
+                    <div class="float_l text">政府车队</div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--mainbox end-->
+            <div class="mainbox float_l">
+                <div class="main">
+                    <div class="float_l"><img src="../images/img-16.png" width="146" height="99" /></div>
+                    <div class="float_l text">物流公司</div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--mainbox end-->
+            <div class="mainbox float_l">
+                <div class="main">
+                    <div class="float_l"><img src="../images/img-17.png" width="146" height="99" /></div>
+                    <div class="float_l text">更多</div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--mainbox end-->
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--centreshow-User end-->
+    <!--appraise-->
+    <div class="appraise">
+        <div class="title"><h1>他们怎么说</h1><h1>What did they say</h1></div>
+        <div class="cententbox">
+            <div class="leftbox float_l">
+                <div class="photo"><img src="../images/photo1.jpg" width="90" height="90" /></div>
+                <div class="text">
+                    <div><h3>秦先生&nbsp;&nbsp;&nbsp;&nbsp;卡曼汽车总经理</h3><div class="clear"></div></div>
+                    <p>英卡车云对4S店的帮助不仅在于提供了一个盈利项目，更在于在“多赢”的商业模式下，拉近了车主与4S店的距离，为4S店与车主的关系增加了更多的想象空间。</p></div>
+            </div>
+            <div class="leftbox float_l">
+                <div class="photo"><img src="../images/photo3.jpg" width="90" height="90" /></div>
+                <div class="text">
+                    <div><h3>丁先生&nbsp;&nbsp;&nbsp;&nbsp;汽车之家电商经理</h3><div class="clear"></div></div>
+                    <p>我们一直在探寻如何利用移动互联网向车主提供服务，英卡车云是我们目前看到的最落地的车主应用。</p></div>
+            </div>
+            <div class="leftbox float_l">
+                <div class="photo"><img src="../images/photo2.png" width="90" height="90" /></div>
+                <div class="text">
+                    <div><h3>苏先生&nbsp;&nbsp;&nbsp;&nbsp;资深车主</h3><div class="clear"></div></div>
+                    <p>很实用、有意义的服务，比如查看碳排放量，可以督促我少开车，更环保，为蓝天贡献自己的一份力量。</p></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--appraise end-->
+    <!--security-->
+    <div class="security">
+        <div class="title"><h1>安全和隐私</h1><h1>Security and Privacy</h1></div>
+        <div class="contentbox">
+            <div class="content">
+                <div class="text float_l"><p class="font-1">英卡车云按照国内外以及行业的信息安全标准和最佳实践要求，持续改进、不断完善信息安全管理和技术体系，为客户提供经第三方权威测评及认证机构审核过的服务。</p></div>
+                <div class="text float_l"><p class="font-1">用户的信任是英卡车云得以生存的根本!</p><p class="font-1">英卡车云参照国际上互联网企业的通行标准，制定了用户隐私原则，成为我们相关工作的指导。</p></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!--security end-->
+    <!--contact-->
+    <div class="contact">
+        <div class="title"><h1>联系我们</h1><h1>Contact us</h1></div>
+        <div class="text">
+            <p>地址：武汉市东湖高新技术开发区光谷软件园C6栋405室<br />联系电话：4001871500<br />邮件：incardata@incar.com.cn</p>
+        </div>
+        <div class="messagebox" ng-controller="suggestCtrl">
+            <div class="message">
+                <form id="signupForm" action="">
+                    <table border="0" cellspacing="5" cellpadding="0">
+                        <tr>
+                            <td>姓名<span class="font-red">*</span>：
+                                <input type="text" name="username" id="username" ng-model="username" class="w-90" />
+                                <div class="verify font-orange" id="usernameDiv"></div>
+                            </td>
+                            <td>邮箱<span class="font-red">*</span>：
+                                <input type="text" name="email" id="email" ng-model="email" class="w-90" />
+                                <div class="verify font-orange" id="emailDiv"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>电话<span class="font-red">*</span>：
+                                <input  type="text"  name="telephone" id="telephone" ng-model="telephone" class="w-90" />
+                                <div class="verify font-orange" id="telephoneDiv"></div>
+                            </td>
+                            <td>主题<span class="font-red">*</span>：
+                                <input type="text" name="theme" id="theme" ng-model="theme" class="w-90" />
+                                <div class="verify font-orange" id="themeDiv"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="vertical-align: top">内容<span class="font-red" style="vertical-align: top">*</span>：
+                                <textarea name="content" id="content" ng-model="content" cols="" rows=""></textarea>
+                                <div class="verify font-orange" id="contentDiv"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" colspan="2" align="center" valign="middle"><input type="submit" value="提交" class="but-1" /></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--contact end-->
+    <!--footer-->
+    <div class="footer">
+        <div class="name float_l">英卡科技<span>Welcome to inCardata</span></div>
+        <div class="copyringht float_l">Copyright © 2014,&nbsp;<a href="/wsite/index/privacy.html"><font style="color:lightslategrey">隐私政策</font></a></div><br />
+        <div class="clear"></div>
+    </div>
+    <!--footer end-->
+</div>
+</body>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-75293894-3', 'auto');
+    ga('send', 'pageview');
+</script>
+</html>

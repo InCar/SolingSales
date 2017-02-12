@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+/* 初始化*/
+html,body{padding:0; margin:0;}
+*{margin:0;padding:0;}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0;font-weight:normal;font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";}
+body, button, input, select, textarea { font: 12px/1.5 "Microsoft YaHei", 微软雅黑,\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu; color:#666 }
+h1, h2, h3, h4, h5, h6 { font-size: 100% }
+address, cite, dfn, em, var { font-style: normal }
+ul, ol, dl { list-style: none }
+a { text-decoration: none !important; outline: none ;font-family:"Microsoft YaHei", 微软雅黑,\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;cursor: pointer;}
+img { border: 0 }
+button, input, select, textarea { font-size: 100% ;font-family:"Microsoft YaHei", 微软雅黑,\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;outline: none;}
+table { border-collapse: collapse; border-spacing: 0 }
+.clear{*zoom:1;}
+.clear:after{display:block;clear:both;content:"\0020";visibility:hidden;height:0;}
+.cl:before{content: ''; display: table;}
+.cl:after{content: ''; display: table; clear: both}
+.global_wrap{position: relative;min-height:100%; clear: both; content: ""; }
+.ielt7 .global_wrap{height:100%; }
+#clsIframe,#LR_Flash{position: absolute;}
+.col_l{float: left;*display: inline;}
+.col_r{float: right;*display: inline;}
+.ect{text-overflow:ellipsis; overflow: hidden; white-space: nowrap;}
+
+
+
+
+/* pub */
+
+body{color:#585657;font-size:14px;}
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear: both;}
+.clearfix{overflow: hidden;zoom:1;}
+.center{margin: 0 auto  !important;}
+.hide{display:none !important;}
+.show{display:block !important;}
+.novisibility{visibility:hidden}
+.okvisibility{visibility:visible;}
+.pointer{cursor:pointer;}
+.a-default{cursor:default;}
+.tcenter{text-align:center;}
+.tleft{text-align:left !important;}
+.tright{text-align:right !important;}
+ul.nolist{list-style: none;}
+.lineblock{display:inline-block;}
+.x-block{display: block;}
+
+/* font */
+.x-bold{font-weight:bolder !important;}
+i{font-style:normal;}
+.max-h1{font-size:30px;font-weight:normal;}
+h1,.x-h1{font-size:22px !important;font-weight:normal;}
+h2,.x-h2{font-size:20px !important;font-weight:normal;}
+h3,.x-h3{font-size:18px !important;font-weight:normal;}
+h4,.x-h4{font-size:16px !important;font-weight:normal;}
+h5,.x-h5{font-size:14px !important;font-weight:normal;}
+h6,.x-h6{font-size:12px;font-weight:normal;}
+/* 文字溢出 */
+.x-ellipsis{white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
+.x-scroll{height:auto;max-height:160px;overflow:hidden;overflow-y:auto;}
+.nomalscroll{overflow:hidden;overflow-y:auto;}
+.x-nowrap{white-space:nowrap !important;}
+.x-break{white-space:pre-wrap !important;}
+
+/* 强制文字转行 */
+.x-space{white-space: normal;word-break:break-all; /*支持IE，chrome，FF不支持*/word-wrap:break-word;/*支持IE，chrome，FF*/}
+
+/* border */
+.line-dashed{border-top:1px dashed #ededed;}
+
+/* radius */
+
+/* margin */
+
+/* background */
+
+
+/* wth */
+.wth400px{width:400px;}
+.wth500px{width:500px;}
+
+/* color */
+.colorred{color:red;}
+
+

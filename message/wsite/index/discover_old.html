@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="discover">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>英卡科技</title>
+    <link href="../css/old/base.css" rel="stylesheet" type="text/css" />
+    <link href="../css/old/layout.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/angular.min.js" type="text/javascript"></script>
+    <script src="../js/angular-resource.min.js" type="text/javascript"></script>
+    <script src="../js/angular-route.min.js" type="text/javascript"></script>
+    <script src="../js/angular-cookies.min.js" type="text/javascript"></script>
+    <script src="../js/angular-sanitize.min.js" type="text/javascript"></script>
+    <script src="../js/fun_js/discoverView.js" type="text/javascript"></script>
+    <script src="../js/fun_js/discoverCtrl.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <!--header-->
+    <div id="header">
+        <div class="logobox float_l"></div>
+        <div class="navbox float_l">
+            <!--nav-->
+            <ul>
+                <li><a href="/wsite/index/index.html" >关于</a></li>
+                <li><a href="/wsite/index/product.html">产品</a></li>
+                <li><a href="/wsite/index/discover.html" style="color:#85bb43; background-color:#FFF">发现</a></li>
+                <li><a href="http://service.incardata.com.cn/" target="_blank">登录</a></li>
+            </ul>
+            <!--nav end-->
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--header end-->
+    <!--intr-discover-->
+    <div class="intr-discover">
+        <div class="float_l" style="width:60px; height:300px;"></div>
+        <ul class="float_l">
+            <li><div class="codebox"><img src="../images/old/qrcode.jpg" width="140"/></div><div><span>英卡微信订阅号<br />获取我们最新的信息</span></div></li>
+        </ul>
+        <ul class="float_l">
+            <li><div class="codebox"><img src="../images/old/serviceCode.jpg" width="140"/></div><div><span>英卡微信服务号<br />获取我们最新的信息</span></div></li>
+        </ul>
+        <div class="clear" ></div>
+    </div>
+    <!--intr-discover end-->
+    <!--container-->
+    <div class="container" ng-controller="mainCtrl">
+        <!--listbox-->
+        <div class="listbox float_l" id="listbox">
+            <ul style="padding-bottom:0px;">
+                <li><a class="icon-2 icon-2a" id="prevPage" ng-click="changePage('prev')">上一页</a></li>
+            </ul>
+            <ul ng-repeat="article in articles">
+                <li class="date float_l" ng-bind="article.tm_announce"></li>
+                <li class="icon-1 float_l"></li>
+                <li class="title float_l" ><a href="#article/{{article.Id}}"><font ng-bind="article.title"></font></a></li>
+            </ul>
+            <ul style="padding-bottom:0px;">
+                <li><a class="icon-3 icon-3a" id="nextPage" ng-click="changePage('next')">下一页</a></li>
+            </ul>
+            <div class="clear" ></div>
+        </div>
+        <!--listbox end-->
+        <!--maincontent-->
+        <div class="maincontent float_l" id="maincontent"  ng-view="">
+        </div>
+        <!--maincontent-->
+        <div class="clear" ></div>
+    </div>
+    <!--container end-->
+    <!--footer-->
+    <div class="footer">
+        <div class="name float_l">英卡科技<span>Welcome to inCardata</span></div>
+        <div class="copyringht float_l">Copyright © 2014,&nbsp;<a href="/wsite/index/privacy.html"><font style="color:lightslategrey">隐私政策</font></a></div><br/>
+        <div class="clear"></div>
+    </div>
+    <!--footer end-->
+</div>
+</body>
+</html>
