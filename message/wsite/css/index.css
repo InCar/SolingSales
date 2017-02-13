@@ -59,7 +59,7 @@ table.x-consultList-table tr td .glyphicon{color:#57bfb8;cursor:pointer;}
 .x-modal-sm .modal-footer button.x-okbtn{background:#57bfb8;color:#fff;}
 /* .x-modal button.x-modal-btn:hover{opacity:0.9;} */
 /* 模态框-表单 */
-.x-modalwth{width:600px;}
+.x-modalwth{width:600px;margin:0 auto;}
 .x-form{margin:15px 0;}
 .x-form .x-form-one{height:32px;line-height:30px;margin-right:10px;margin-bottom:20px;}
 .x-form .x-form-one span.tit{padding:0 5px;float:left;line-height:32px;text-align:right;width:100px;}
