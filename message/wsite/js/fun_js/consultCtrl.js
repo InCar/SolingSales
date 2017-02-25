@@ -116,4 +116,13 @@ angular.module("consult",[]).controller("consultCtrl",function ($scope,$http){
         Gid('s_city').value + " - 县/区" +
         Gid('s_county').value + "</h3>"
     };
+
+
+
+    $scope.newsAddModal = function(){
+        $("#dealModal").modal('show');
+    };
+
+
+
 });
