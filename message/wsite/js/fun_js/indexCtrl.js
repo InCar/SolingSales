@@ -98,4 +98,10 @@ angular.module("index",[]).controller("indexCtrl",function ($scope,$http){
         })
     }
 
+    // 加盟商登录显示
+    $scope.franchiseeLoginClick = function(){
+        $scope.franchiseeLoginTips = "";
+        $("#franchiseeLoginModal").modal('show');
+    };
+
 });
