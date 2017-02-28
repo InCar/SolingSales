@@ -24,7 +24,7 @@
 .header .x-nav li a.exit{padding:0 4px;}
 /* 页脚 */
 .footer{border-bottom:8px #57bfb8 solid;min-width:1000px;}
-.footer p{width:100%;line-height:70px;text-align:center;font-size:12px;}
+.footer p{width:100%;line-height:70px;text-align:center;font-size:12px;padding:10px 0;}
 /* index */
 .x-indexpic{width:100%;height:auto;max-width:1920px;}
 .x-indexpic img{width:100%;}
@@ -41,7 +41,7 @@
 .x-consultList-search .x-consultList-search-one .form-control{float:left;width:130px;height:32px;line-height:30px;border-radius:0;}
 a.searchbtn{width:80px;height:32px;line-height:33px;text-align:center;color:#fff;float:right;background:#57bfb8;border-radius:4px; word-spacing:8px;letter-spacing:6px;}
 a.daochubtn{margin-left:10px;background:#33a6ca;}
-a.addNewBtn{margin-left:10px;background:#6abf6b;width:120px;}
+a.addNewBtn{margin-left:10px;background:#57bfb8;width:120px;}
 table.x-consultList-table{width:100%;}
 table.x-consultList-table tr td{line-height:40px;text-align:center;border:1px solid #dbdbdb; }
 table.x-consultList-table thead{background:#f5f5f5;color:#656b74;}
