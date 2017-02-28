@@ -96,7 +96,32 @@ angular.module("index",[]).controller("indexCtrl",function ($scope,$http){
         }).error(function(data){
             console.log(data.status);
         })
-    }
+    };
+
+     //加盟商登录
+    $scope.franchiseeLogin = function(){
+        if(!$scope.account){
+            $scope.tips = "请填写账号";
+            return false;
+        }
+        if(!$scope.pwd){
+            $scope.pwd = "请填写密码";
+            return false;
+        }
+
+        var sha1_password =hex_sha1($scope.pwd);//SHA1进行加密
+        $scope.postData={"user_name":$scope.account,"pwd":sha1_password};
+        $http.post('/wsite/franchiseeLogin',$scope.postData).success(function(data){
+            console.log((data.data).length);
+            if((data.data).length > 0){
+                window.location.href = "/consultList.html";
+            }else{
+                alert("登录账号或密码错误！");
+            }
+        }).error(function(data){
+            console.log(data.status);
+        })
+    };
 
     // 加盟商登录显示
     $scope.franchiseeLoginClick = function(){
