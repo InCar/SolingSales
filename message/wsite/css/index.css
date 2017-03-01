@@ -32,7 +32,8 @@
 .x-indexbtns a.indexbtn{width:180px;margin-left:30px;height:48px;line-height:48px;font-size:24px;text-align:center;color:#fff;float:right;background:#57bfb8;border-radius:4px;}
 
 /* 内容区 */
-.main{min-width:1000px;}
+.main{min-width:1000px;min-height:80%;}
+/* 临时解决底部固定问题 */
 .x-listTitle{margin-top:20px;margin-bottom:10px;}
 .x-listTitle span.title{color:#57bfb8;line-height:30px;}
 .x-consultList-search{margin:15px 0;}
