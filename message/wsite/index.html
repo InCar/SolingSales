@@ -31,8 +31,8 @@
             <li><a class="x-home" href="index.html"><i class="x-icons x-icons-home"></i></a></li>
             <li><a class="nav active" ng-click="consultClick();">加盟咨询</a></li>
             <li><a class="nav" href="https://www.sojump.hk/m/11417635.aspx?from=groupmessage">加盟申请</a></li>
-            <li><a class="nav" ng-click="franchiseeLoginClick();">加盟商登录</a></li>
-            <li><a class="nav" ng-click="loginClick();">管理员登录</a></li>
+            <li><a class="nav" ng-click="loginClick(2);">加盟商登录</a></li>
+            <li><a class="nav" ng-click="loginClick(1);">管理员登录</a></li>
         </ul>
         <ul class="x-nav fr hide">
             <li><a class="x-home"><i class="x-icons x-icons-home"></i></a></li>
@@ -176,21 +176,21 @@
         <h4 class="modal-title x-modal-title">加盟商登录</h4>  
       </div>  
       <div class="modal-body">  
-        <div class="alert alert-warning" ng-show="franchiseeLoginTips != ''">
+        <div class="alert alert-warning" ng-show="tips != ''">
             <a href="#" class="close" data-dismiss="alert" >
                 &times;
-            </a><font></font>
+            </a><font ng-bind="tips"></font>
         </div>
         <div class="x-form clearfix center wth400px">
             <div class="x-form-one">
                 <span class="tit wth70">帐号：</span>
-                <input class="form-control wth300" type="text">
+                <input class="form-control wth300" type="text" ng-model="account">
             </div>
             <div class="x-form-one">
                 <span class="tit wth70">密码：</span>
-                <input class="form-control wth300" type="password">
+                <input class="form-control wth300" type="password" ng-model="pwd">
             </div>
-            <button type="button" class="btn x-modal-btn">提交</button>
+            <button type="button" class="btn x-modal-btn" ng-click="franchiseeLogin();">提交</button>
         </div>
       </div>  
     </div><!-- /.modal-content -->  

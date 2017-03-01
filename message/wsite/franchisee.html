@@ -1,4 +1,4 @@
-﻿<html ng-app="consult">
+﻿<html ng-app="franchiseeApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,16 +17,15 @@
     <script src="js/jquery.validate.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/fun_js/consultCtrl.js"></script>
-    <script class="resources library" src="js/area.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/fun_js/franchiseeCtrl.js"></script>
 </head>
-<body ng-controller="consultCtrl">
+<body ng-controller="franchiseeCtrl">
     <!-------------- header start -------------->
 <div class="header">
     <div class="x-inner clearfix">
         <div class="x-logo fl"><img src="../images/logo.png" alt=""></div>
         <ul class="x-nav fr">
-            <li><a class="nav active" href="consultList.html">加盟商资讯</a></li>
+            <li><a class="nav active" href="#">加盟商资讯</a></li>
             <li><i>franchiseeAdmin</i>|<a class="exit" href="index.html">退出</a></li>
         </ul>
     </div>
@@ -41,19 +40,13 @@
             </div>
             <div class="line-dashed"></div>
             <div>
-                <div class="franchiseeNew-one">
-                    <div class="franchisee-title">标题：加盟商十多万全额欺额外企鹅负我</div>
+                <div class="franchiseeNew-one" ng-repeat=" i in informationList">
+                    <div class="franchisee-title" ng-bind="i.title"></div>
                     <div class="franchisee-img">
-                        <img src="../images/pic02.png">
+                        <img ng-src="{{i.url}}">
                     </div>
                     <div class="line-dashed"></div>
-                </div>
-                <div class="franchiseeNew-one">
-                    <div class="franchisee-title">标题：加盟商十多万全额欺额外企鹅负我</div>
-                    <div class="franchisee-img">
-                        <img src="../images/pic02.png">
-                    </div>
-                    <div class="line-dashed"></div>
+                    <!--<a class="fr deleteNewsBtn" data-toggle="modal" data-target="#deleteModal">删除</a>-->
                 </div>
             </div>
         </div>
@@ -62,11 +55,11 @@
 
 
 <!-------------- footer start -------------->
-<div class="footer">
-    <p>Copyright @2016版权所有：深圳市索菱实业股份有限公司 <i style="color:#57bfb8;">粤ICP备15009715号-1</i>  &emsp;&emsp;法律声明 &emsp;|&emsp;隐私条款&emsp;|&emsp;
-        <a href="http://szcert.ebs.org.cn/e0b6b83b-603d-4a27-8775-77d095495eb0" target="_blank"><img src="http://szcert.ebs.org.cn/Images/govIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" width="75" height="105" border="0" style="border-width:0px;border:hidden; border:none;"></a>
-    </p>
-</div>
+    <div class="footer">
+        <p>Copyright @2016版权所有：深圳市索菱实业股份有限公司 <i style="color:#57bfb8;"><a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备15009715号-2</a></i>  &emsp;&emsp;法律声明 &emsp;|&emsp;隐私条款&emsp;|&emsp;
+            <a href="http://szcert.ebs.org.cn/e0b6b83b-603d-4a27-8775-77d095495eb0" target="_blank"><img src="http://szcert.ebs.org.cn/Images/govIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" width="75" height="105" border="0" style="border-width:0px;border:hidden; border:none;"></a>
+        </p>
+    </div>
 <!-------------- footer end ---------------->
 
 

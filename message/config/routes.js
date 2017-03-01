@@ -11,6 +11,7 @@ module.exports = function(app) {
     app.post('/wsite/franchiseeLogin',franchiseeAccount.login);
     app.get('/wsite/getInformationList',information.getInformation);
     app.post('/wsite/addInformation',information.addInformation);
+    app.post('/wsite/upload',information.upload);
     app.delete('/wsite/deleteInformation',information.deleteInformation);
     app.get('/wsite/getConsultList', consult.getConsults);
     app.get('/wsite/exportExcel',consult.exportExcel);

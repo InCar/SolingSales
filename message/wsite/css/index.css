@@ -75,13 +75,13 @@ table.x-consultList-table tr td .glyphicon{color:#57bfb8;cursor:pointer;}
 .x-form-addNews .form-control{width:100%;line-height:30px;border-radius:0;margin-right:10px;}
 .x-form-addNews input.form-control{height:32px;}
 .x-form-addNews .input_file{}
-.x-form-addNews .againSee{width:500px;height:200px;border:1px #ccc solid;margin:10px auto;}
+.x-form-addNews .againSee{width:500px;height:200px;border:0px #ccc solid;margin:10px auto;}
 
 
 /*加盟商资讯*/
 .franchiseeNew-one{margin-bottom:40px;}
 .franchisee-title{font-size:18px;color:#666;margin:10px 0 10px;}
-.franchisee-img img{display:block;width:100%;height:auto;}
+.franchisee-img img{display:block;width:auto;height:auto;}
 .franchisee-img{margin:10px 0 20px;overflow:hidden;}
 a.deleteNewsBtn{color:blue;font-size:14px;margin-top:5px;}
 a.deleteNewsBtn:hover{text-decoration:underline !important;color:#666;}

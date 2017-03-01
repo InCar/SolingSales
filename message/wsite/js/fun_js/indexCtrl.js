@@ -69,10 +69,19 @@ angular.module("index",[]).controller("indexCtrl",function ($scope,$http){
         $scope.phone = "";
     }
 
-    $scope.loginClick = function(){
+    $scope.loginClick = function(id){
        $scope.tips = "";
-       $("#loginModal").modal('show');
+        console.log(id);
+        switch (id){
+            case 1 :
+                $("#loginModal").modal('show');
+                break;
+            case 2 :
+                $("#franchiseeLoginModal").modal('show');
+                break;
+        }
     };
+
 
     $scope.login = function(){
         if(!$scope.account){
@@ -114,7 +123,7 @@ angular.module("index",[]).controller("indexCtrl",function ($scope,$http){
         $http.post('/wsite/franchiseeLogin',$scope.postData).success(function(data){
             console.log((data.data).length);
             if((data.data).length > 0){
-                window.location.href = "/consultList.html";
+                window.location.href = "/franchisee.html";
             }else{
                 alert("登录账号或密码错误！");
             }
